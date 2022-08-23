@@ -1,0 +1,140 @@
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+   
+  }
+  body{
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  font-family: "Cairo", sans-serif;
+  position: relative;
+ background-color: var(--main-color);
+
+  }
+  :root {
+    --main-color: #002820;
+    --main-color-alt: #1787e0;
+    --main-transition: 0.3s;
+    --main-padding-top: 100px;
+    --main-padding-bottom: 100px;
+    --section-background: #ececec;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  a {
+    text-decoration: none;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  
+  .pricing{
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));  
+    gap: 40px;
+    align-content: center;
+  
+
+}
+.card{
+  background-color: white;
+  border-radius: 20px;
+
+}
+.card .top h2{
+  margin: 0;
+  padding: 20px;
+}
+.card .top{
+  background-color: #009578;
+  border-radius: 20px 20px 0px 0px;
+  color: white;
+}
+.card .top i{
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+.card ul li{
+  padding: 20px;
+  list-style: none;
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+}
+.card ul li::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(137, 137, 137, 0.588);
+  left: 0;
+  width: 100%;
+  height: 1px;
+}
+.cost{
+  font-size: 40px;
+  font-weight: bold;
+  margin: 20px;
+}
+.sec1{
+  border-bottom: 1px solid rgba(128, 128, 128, 0.532);
+}
+p.matier{
+  color: rgb(119, 119, 119);
+  font-size: 20px;
+}
+p.last{
+  font-size: 14px;
+  color: rgb(119, 119, 119);
+
+}
+p>span{
+  font-size:25px;
+}
+ a{
+  padding: 10px 40px;
+  border-radius: 10px;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  font-size: 20px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+ a:hover{
+  color: white;
+  background-color: #009578;
+  border: 1px solid white;
+}
